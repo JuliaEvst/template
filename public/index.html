@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="\src\index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -18,7 +19,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Last.fm</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -33,5 +34,373 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <header class="header">
+      <div class="container">
+
+        <img src = "%PUBLIC_URL%/img/albom.png" class="albom">
+
+        <div class="button_player">
+          <img src="%PUBLIC_URL%/img/music_back.png">
+          <img src="%PUBLIC_URL%/img/play_music.png">
+          <img src="%PUBLIC_URL%/img/music_forvard.png">
+          <img src="%PUBLIC_URL%/img/heart.png">
+        </div>
+
+        <img src="%PUBLIC_URL%/img/logo.png" class="logo">
+      
+
+        <div class="header_menu_nav">
+          <div class="search"><a href="#"> 
+            <img src="%PUBLIC_URL%/img/search.png"></a>
+          </div>
+
+        <div class="nav_header">
+          <a href="H"> Live </a>
+          <a href="H"> Music </a>
+          <a href="H"> Charts </a>
+          <a href="H"> Events </a>
+          <a href="H"> Features </a>
+          <a href="H"> Subscrube </a>
+          <a href="H"> Log in </a>
+        </div>
+
+          <div class="user">
+            <a href="#"> <img src="%PUBLIC_URL%/img/user.png"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="music">
+      <h1>Music</h1>
+      <h2>Hot right now</h2>
+      <hr>
+    </div>
+
+    <div class="container">
+      <div class="single_container">
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Selena.jfif" class="music_circle">
+          <h2 class="circle_singer">Selena Gomez</h2>
+          <p class="circle_genre">Rock Pop</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Charlie.jfif" class="music_circle">
+          <h2 class="circle_singer">Charlie Puth</h2>
+          <p class="circle_genre">Pop Electronics</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/ZAYN.jfif" class="music_circle">
+          <h2 class="circle_singer">ZAYN</h2>
+          <p class="circle_genre">Pop Dance</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Camila.jfif" class="music_circle">
+          <h2 class="circle_singer">Camila Cabello</h2>
+          <p class="circle_genre">Pop Dance Electronics</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Ariana.jfif" class="music_circle">
+          <h2 class="circle_singer">Ariana Grande</h2>
+          <p class="circle_genre">Pop</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Taylor.jfif" class="music_circle">
+          <h2 class="circle_singer">Taylor Swift</h2>
+          <p class="circle_genre">Pop Country</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Shawn.jfif" class="music_circle">
+          <h2 class="circle_singer">Shawn Mendes</h2>
+          <p class="circle_genre">Pop</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Harry.jfif" class="music_circle">
+          <h2 class="circle_singer">Harry Styles</h2>
+          <p class="circle_genre">Pop</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Troye.jfif" class="music_circle">
+          <h2 class="circle_singer">Troye Sivan</h2>
+          <p class="circle_genre">Pop</p>
+        </div>
+
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Rita.jfif" class="music_circle">
+          <h2 class="circle_singer">Rita Ora</h2>
+          <p class="circle_genre">Pop Dance</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/BT.jfif" class="music_circle">
+          <h2 class="circle_singer">BTS</h2>
+          <p class="circle_genre">Pop</p>
+        </div>
+
+        <div class="music_circle">
+          <img src = "%PUBLIC_URL%/img/Calvin.jfif" class="music_circle">
+          <h2 class="circle_singer">Calvin Harris</h2>
+          <p class="circle_genre">Edm</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="music">
+      <h2>Popular tracks</h2>
+      <hr>
+    </div>
+
+    <div class="container">
+      <div class="track_container">
+
+          <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Nine_Track.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">We Don't Talk Anymore</h3>
+                <h3 class="track_text_info">Charlie Puth, Selena Gomez</h3>
+                <p class="track_text_info">Pop</p>
+              </div>
+          </div>
+
+          <div class="music_track">
+            <img src="%PUBLIC_URL%/img/Setlist.jfif" class="music_track_img">
+            <div class="track_text">
+              <h3 class="track_text_info">Leave Before You Love Me</h3>
+              <h3 class="track_text_info">Marshmello, Jonas Brothers</h3>
+              <p class="track_text_info">Pop</p>
+            </div>
+          </div>
+
+          <div class="music_track">
+            <img src="%PUBLIC_URL%/img/Can.jfif" class="music_track_img">
+            <div class="track_text">
+              <h3 class="track_text_info">Who Owns My Heart</h3>
+              <h3 class="track_text_info">Miley Cyrus</h3>
+              <p class="track_text_info">Pop</p>
+            </div>
+          </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/BTS.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">Dynamite</h3>
+                <h3 class="track_text_info">BTS</h3>
+                <p class="track_text_info">Pop</p>
+              </div>
+            </div>
+
+          <div class="music_track">
+          <img src="%PUBLIC_URL%/img/Essential.jfif" class="music_track_img">
+          <div class="track_text">
+            <h3 class="track_text_info">Feel Good Inc</h3>
+            <h3 class="track_text_info">Gorillaz, Jamie Hewlett, De La Soul</h3>
+            <p class="track_text_info">Pop</p>
+            </div>
+          </div>
+
+          <div class="music_track">
+            <img src="%PUBLIC_URL%/img/Holiday.jfif" class="music_track_img">
+            <div class="track_text">
+              <h3 class="track_text_info">Holiday</h3>
+              <h3 class="track_text_info">Green Day</h3>
+              <p class="track_text_info">Pank</p>
+            </div>
+          </div>
+
+          <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Spleenwise.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">Spleenwise</h3>
+                <h3 class="track_text_info">Hangman's Chair</h3>
+                <p class="track_text_info">Metall</p>
+              </div>
+          </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Evolve.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">Believer</h3>
+                <h3 class="track_text_info">Imagine Dragons</h3>
+                <p class="track_text_info">Poc</p>
+              </div>
+          </div>
+
+          <div class="music_track">
+            <img src="%PUBLIC_URL%/img/Limp.jfif" class="music_track_img">
+            <div class="track_text">
+              <h3 class="track_text_info">Behind Blue Eyes</h3>
+              <h3 class="track_text_info">Limp Bizkit</h3>
+              <p class="track_text_info">Metall</p>
+            </div>
+          </div>
+
+          <div class="music_track">
+            <img src="%PUBLIC_URL%/img/Nirvana.jfif" class="music_track_img">
+            <div class="track_text">
+              <h3 class="track_text_info">Come As You Are</h3>
+              <h3 class="track_text_info">Nirvana</h3>
+              <p class="track_text_info">Poc</p>
+            </div>
+          </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Kanye.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">Jesus Walks</h3>
+                <h3 class="track_text_info">Kanye West</h3>
+                <p class="track_text_info">Hip Hop Rap</p>
+              </div>
+            </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Marilyn.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">Tainted Love</h3>
+                <h3 class="track_text_info">Marilyn Manson</h3>
+                <p class="track_text_info">Metall</p>
+              </div>
+            </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/XXX.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">SAD!</h3>
+                <h3 class="track_text_info">XXXTentacion</h3>
+                <p class="track_text_info">Hip Hop Rap</p>
+              </div>
+            </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Skillet.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">Comatose</h3>
+                <h3 class="track_text_info">Skillet</h3>
+                <p class="track_text_info">Roc</p>
+              </div>
+            </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Smash.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">All Star</h3>
+                <h3 class="track_text_info">Smash Mouth</h3>
+                <p class="track_text_info">Roc</p>
+              </div>
+            </div>
+
+            <div class="music_track">
+              <img src="%PUBLIC_URL%/img/Kiss.jfif" class="music_track_img">
+              <div class="track_text">
+                <h3 class="track_text_info">I Was Made For Lovin' You</h3>
+                <h3 class="track_text_info">Kiss</h3>
+                <p class="track_text_info">Roc</p>
+              </div>
+            </div>
+
+          <div class="music_track">
+            <img src="%PUBLIC_URL%/img/Twenty.jfif" class="music_track_img">
+            <div class="track_text">
+              <h3 class="track_text_info">Heathens</h3>
+              <h3 class="track_text_info">Twenty one pilots</h3>
+              <p class="track_text_info">Roc</p>
+            </div>
+          </div>
+
+          <div class="music_track">
+            <img src="%PUBLIC_URL%/img/Police.jfif" class="music_track_img">
+            <div class="track_text">
+              <h3 class="track_text_info">Every Breath You Take</h3>
+              <h3 class="track_text_info">The Police</h3>
+              <p class="track_text_info">Roc</p>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+
+  <footer>
+    <div class="wrapper">
+
+      <div class="footer_content">
+
+        <div class="footer_column_nav">
+          <p class="text_footer_column"> COMPANY </p>
+            <a href="H"> About List.fm </a>
+            <a href="H"> Contact Us </a>
+            <a href="H"> Jobs </a>
+        </div>
+  
+        <div class="footer_column_nav">
+          <p class="text_footer_column"> HELP </p>
+          <a href="H"> Track My Music </a>
+          <a href="H"> Community Support </a>
+          <a href="H"> Community Guidelines </a>
+          <a href="H"> Help </a></li>
+        </div>
+  
+        <div class="footer_column_nav">
+          <p class="text_footer_column"> GOODIES </p>
+          <a href="H"> Download Scrobbler </a>
+          <a href="H"> Developer API </a>
+          <a href="H"> Free Music Download </a>
+          <a href="H"> Merchandise </a>
+        </div>
+  
+        <div class="footer_column_nav">
+          <p class="text_footer_column"> ACCOUNT </p>
+          <a href="H"> Inbox </a>
+          <a href="H"> Settings </a>
+          <a href="H"> Last.fm Pro</a>
+          <a href="H"> Logout </a>
+        </div>
+  
+        <div class="footer_column_nav">
+          <p class="text_footer_column"> FOLLOW US </p>
+          <a href="H"> Facebook </a>
+          <a href="H"> Twitter </a>
+          <a href="H"> Instagram </a>
+          <a href="H"> YouTube </a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer_block">
+        
+        <div class="footer_leng">
+          <p>English</p>
+          <p>Deutsch</p>
+          <p>Español</p>
+          <p>Français</p>
+          <p>Italiano</p>
+          <p>日本語</p>
+          <p>Polski</p>
+          <p>Português</p>
+          <p>Русский</p>
+          <p>Svenska</p>
+          <p>Türkçe</p>
+          <p>简体中文</p>
+        </div>
+        <div class="footer_logo">
+          <img src="%PUBLIC_URL%/img/last_logo.png" class="last_logo">
+      </div> 
+      </div>
+
+    </div>
+  </footer>
+
   </body>
 </html>
